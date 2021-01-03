@@ -11,13 +11,14 @@ api = Api(app)
 # print(d)
 
 
-# LOCATIONS = {
-#     'location1': {'id': 1, 'location': [25.2285, 55.3273]},
-#     'location2': {'id': 2, 'location': [26.2285, 54.3273]},
-# }
 LOCATIONS = {
-    'distance': {'location1': [25.2285, 55.3273], 'location2': [26.2285, 54.3273]},
+    'location1': {'id': 1, 'location': [25.2285, 55.3273]},
+    'location2': {'id': 2, 'location': [26.2285, 54.3273]},
 }
+
+# LOCATIONS = {
+#     'distance': {'location1': [25.2285, 55.3273], 'location2': [26.2285, 54.3273]},
+# }
 
 
 def abort_if_todo_doesnt_exist(todo_id):
@@ -78,8 +79,8 @@ class TodoList(Resource):
 ##
 # Actually setup the Api resource routing here
 ##
-api.add_resource(TodoList, '/todos')
-api.add_resource(Todo, '/todos/<todo_id>')
+api.add_resource(TodoList, '/location')
+api.add_resource(Todo, '/location/<todo_id>')
 
 
 if __name__ == '__main__':

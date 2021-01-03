@@ -1,0 +1,34 @@
+
+// Requisição enviada pelo dispositivo
+
+POST: 
+{ 
+  "idUser": 154,
+  "position":
+  {
+    "trackId": "a16qd54a",
+    "reportedDate": "29/12/2020 22:35:48",
+    "latitude" : "55.3273",
+    "longitude": "25.2285"
+  }
+}
+
+
+// Resposta
+{
+  "idUser": 154,
+  "reportedDate": "29/12/2020 22:35:48",
+  "neighbors":
+  [
+    { 
+      "nameUser": "Jose",
+      "distance": "25m"
+    },
+    { 
+      "nameUser": "Jose",
+      "distance": "25m"
+    }
+  ]
+}
+
+
